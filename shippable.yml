@@ -9,4 +9,8 @@ build:
     - mkdir -p shippable/codecoverage
     - composer install -o
     - phpunit  --log-junit shippable/testresults/junit_phpunit.xml --coverage-xml shippable/codecoverage tests
-    - behat -f junit -o shippable/codecoverage
+    - vendor/bin/behat -f junit -o shippable/codecoverage
+    
+  cache: true
+  cache_dir_list:
+    - $SHIPPABLE_BUILD_DIR/vendor
