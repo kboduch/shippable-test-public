@@ -7,5 +7,5 @@ build:
   ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
-    - composer install
+    - composer install -o
     - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests
