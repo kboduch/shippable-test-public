@@ -18,4 +18,9 @@ class DummySpec extends ObjectBehavior
     {
         $this->shouldImplement(DummyInterface::class);
     }
+
+    public function it_returns_name(): void
+    {
+        $this->hello()->shouldReturn('Hello Bob');
+    }
 }
