@@ -8,7 +8,7 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - composer install -o
-    - phpunit  --log-junit shippable/testresults/junit_phpunit.xml --coverage-xml shippable/codecoverage tests
+    - phpunit  --log-junit shippable/testresults/junit_phpunit.xml --coverage-xml shippable/codecoverage/php_unit tests
     - vendor/bin/behat -f junit -o shippable/testresults
     - vendor/bin/phpspec run --format=junit > shippable/testresults/junit_phpspec.xml
     
