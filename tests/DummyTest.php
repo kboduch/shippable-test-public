@@ -6,6 +6,9 @@ use PHPUnit\Framework\TestCase;
 
 class DummyTest extends TestCase
 {
+    /**
+     * @covers Dummy::hello
+     */
     public function testHello(): void
     {
         $this->assertSame(
