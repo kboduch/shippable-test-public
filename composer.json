@@ -1,0 +1,22 @@
+{
+    "name": "ibodzio/shippable-test-public",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "phpspec/phpspec": "^5.1",
+        "behat/behat": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Krzysztof Boduch",
+            "email": "boduch.krzysztof@gmail.com"
+        }
+    ]
+}
+
+
