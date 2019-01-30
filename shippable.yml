@@ -11,7 +11,7 @@ build:
     - phpunit  --log-junit shippable/testresults/junit_phpunit.xml --coverage-xml shippable/codecoverage/php_unit tests
     - vendor/bin/behat -f junit -o shippable/testresults
     - vendor/bin/phpspec run --format=junit > shippable/testresults/junit_phpspec.xml
-    
+    - phpdbg -qrr ./vendor/bin/phpspec run
   cache: true
   cache_dir_list:
     - $SHIPPABLE_BUILD_DIR/vendor

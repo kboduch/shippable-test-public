@@ -1,0 +1,5 @@
+extensions:
+  LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension:
+    format: [xml]
+    output:
+      xml: shippable/codecoverage/php_spec
