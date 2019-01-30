@@ -10,6 +10,7 @@ build:
     - composer install -o
     - phpunit  --log-junit shippable/testresults/junit_phpunit.xml --coverage-xml shippable/codecoverage tests
     - vendor/bin/behat -f junit -o shippable/testresults
+    - vendor/bin/phpspec --format=junit > shippable/testresults/junit_phpspec.xml
     
   cache: true
   cache_dir_list:
